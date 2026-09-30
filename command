@@ -7,3 +7,9 @@ kubectl delete all --all | ลบ pod ทั้งหมด
 
 kubectl delete pods ชื่อ pod |  ลบ pod
 kubectl delete deployment ชื่อ deployment | ลบใน deployment ทั้งหมด
+kubectl apply -f . | สั่ง apply ทุกNode ทุกไฟล์ 
+kubectl port-forward svc/client-service 30001:80  | ทำการ forward port (เลข port) หน้าบ้าน
+client หน้าบ้าน
+service หลังบ้าน
+kubectl port-forward svc/server-service 30002:80 หลังบ้าน
+kubectl apply -f .\mongo-deployment.yml 
